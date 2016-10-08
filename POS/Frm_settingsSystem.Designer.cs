@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_save = new MetroFramework.Controls.MetroTile();
             this.Label2 = new System.Windows.Forms.Label();
@@ -44,39 +45,45 @@
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_phoneNo = new System.Windows.Forms.TextBox();
             this.txt_name = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.btn_saveVAT = new MetroFramework.Controls.MetroTile();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_percent = new System.Windows.Forms.TextBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.metroTabControl1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // metroTabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(23, 63);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(449, 388);
-            this.tabControl1.TabIndex = 1;
+            this.metroTabControl1.Controls.Add(this.tabPage3);
+            this.metroTabControl1.Controls.Add(this.tabPage4);
+            this.metroTabControl1.Location = new System.Drawing.Point(11, 63);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(449, 388);
+            this.metroTabControl1.TabIndex = 2;
+            this.metroTabControl1.UseSelectable = true;
             // 
-            // tabPage1
+            // tabPage3
             // 
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(441, 362);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Company ";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage3.Controls.Add(this.groupBox1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(441, 346);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Company";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 38);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(441, 346);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "VAT";
             // 
             // groupBox1
             // 
@@ -93,10 +100,11 @@
             this.groupBox1.Controls.Add(this.txt_email);
             this.groupBox1.Controls.Add(this.txt_phoneNo);
             this.groupBox1.Controls.Add(this.txt_name);
-            this.groupBox1.Location = new System.Drawing.Point(8, 15);
+            this.groupBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(10, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(420, 334);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Company Information";
             // 
@@ -109,7 +117,7 @@
             this.btn_save.TabIndex = 18;
             this.btn_save.Text = "Save";
             this.btn_save.UseSelectable = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click_1);
             // 
             // Label2
             // 
@@ -209,39 +217,29 @@
             this.txt_name.Size = new System.Drawing.Size(301, 54);
             this.txt_name.TabIndex = 6;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(441, 362);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "VAT";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.metroTile1);
+            this.groupBox2.Controls.Add(this.btn_saveVAT);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txt_percent);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(8, 6);
+            this.groupBox2.Location = new System.Drawing.Point(10, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(420, 343);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Details";
             // 
-            // metroTile1
+            // btn_saveVAT
             // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(328, 272);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(86, 65);
-            this.metroTile1.TabIndex = 19;
-            this.metroTile1.Text = "Save";
-            this.metroTile1.UseSelectable = true;
+            this.btn_saveVAT.ActiveControl = null;
+            this.btn_saveVAT.Location = new System.Drawing.Point(328, 272);
+            this.btn_saveVAT.Name = "btn_saveVAT";
+            this.btn_saveVAT.Size = new System.Drawing.Size(86, 65);
+            this.btn_saveVAT.TabIndex = 19;
+            this.btn_saveVAT.Text = "Save";
+            this.btn_saveVAT.UseSelectable = true;
+            this.btn_saveVAT.Click += new System.EventHandler(this.btn_saveVAT_Click);
             // 
             // label11
             // 
@@ -263,18 +261,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 473);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(475, 463);
+            this.Controls.Add(this.metroTabControl1);
             this.MaximizeBox = false;
             this.Name = "Frm_settingsSystem";
             this.Resizable = false;
             this.Text = "System Settings";
             this.Load += new System.EventHandler(this.Frm_settingsSystem_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.metroTabControl1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -283,9 +281,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox1;
+        private MetroFramework.Controls.MetroTile btn_save;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.Label Label5;
@@ -298,11 +297,10 @@
         internal System.Windows.Forms.TextBox txt_email;
         internal System.Windows.Forms.TextBox txt_phoneNo;
         internal System.Windows.Forms.TextBox txt_name;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage4;
         internal System.Windows.Forms.GroupBox groupBox2;
+        private MetroFramework.Controls.MetroTile btn_saveVAT;
         internal System.Windows.Forms.Label label11;
         internal System.Windows.Forms.TextBox txt_percent;
-        private MetroFramework.Controls.MetroTile btn_save;
-        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }

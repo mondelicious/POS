@@ -46,6 +46,7 @@
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
+            this.toolStripStatusLabel10 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,8 @@
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel6,
             this.toolStripStatusLabel7,
-            this.toolStripStatusLabel9});
+            this.toolStripStatusLabel9,
+            this.toolStripStatusLabel10});
             this.statusStrip1.Location = new System.Drawing.Point(20, 471);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(974, 22);
@@ -70,8 +72,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel1.Text = "Status:";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(90, 17);
+            this.toolStripStatusLabel1.Text = "Account Status:";
             // 
             // toolStripStatusLabel2
             // 
@@ -201,6 +203,12 @@
             this.metroTile9.UseSelectable = true;
             this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             // 
+            // toolStripStatusLabel10
+            // 
+            this.toolStripStatusLabel10.Name = "toolStripStatusLabel10";
+            this.toolStripStatusLabel10.Size = new System.Drawing.Size(124, 17);
+            this.toolStripStatusLabel10.Text = "toolStripStatusLabel10";
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,5 +259,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel9;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel10;
     }
 }

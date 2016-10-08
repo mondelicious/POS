@@ -13,6 +13,7 @@ namespace POS
         public static string eAddress = "";
         public static string Website = "";
         public static string tinNumber = "";
+        public static string vat = "";
         public Frm_settingsSystem()
         {
             InitializeComponent();
@@ -24,6 +25,11 @@ namespace POS
         }
 
         private void btn_save_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_save_Click_1(object sender, EventArgs e)
         {
             if (MetroMessageBox.Show(this, "Do you want to save this information?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -40,6 +46,21 @@ namespace POS
             {
                 //TODO:NOTHING
             }
+        }
+
+        private void btn_saveVAT_Click(object sender, EventArgs e)
+        {
+            if (MetroMessageBox.Show(this, "Do you want to save this information?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                vat = txt_percent.Text;
+                Cls_cmd.AddVat();
+                MetroMessageBox.Show(this, "Saved successfully!", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                //TODO:IF NO, DO NOTHING.
+            }
+
         }
     }
 }

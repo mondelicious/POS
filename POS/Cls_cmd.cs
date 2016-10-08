@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace POS
 {
@@ -42,6 +36,26 @@ namespace POS
             Frm_product.unitPrice = null;
             Frm_product.quantityStock = null;
             Frm_product.reorderLevel = null;
+        }
+
+        public static void AddVat()
+        {
+            Frm_product _owner = new Frm_product();
+
+            SqlCommand cmd = new SqlCommand();
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["connGlobal"].ToString();
+
+            conn.Open();
+            cmd.Connection = conn;
+            string INSERT = "INSERT INTO tbl_VAT(VAT)VALUES(@vat)";
+            cmd.Parameters.AddWithValue("vat", Frm_settingsSystem.vat);
+            cmd.CommandText = INSERT;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            cmd.Parameters.Clear();
+
+            Frm_settingsSystem.vat = null;
         }
 
         public static void UpdateProduct()
