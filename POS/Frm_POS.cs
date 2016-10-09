@@ -27,5 +27,10 @@ namespace POS
         {
 
         }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

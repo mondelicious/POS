@@ -344,7 +344,7 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(666, 345);
+            this.metroTabPage1.Size = new System.Drawing.Size(653, 345);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Add";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -359,7 +359,7 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(666, 345);
+            this.metroTabPage2.Size = new System.Drawing.Size(653, 345);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Edit/Update";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -587,7 +587,7 @@
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(666, 345);
+            this.tabPage1.Size = new System.Drawing.Size(653, 345);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Search";
             // 
@@ -860,6 +860,7 @@
             this.btn_StockExit.TabIndex = 24;
             this.btn_StockExit.Text = "Exit";
             this.btn_StockExit.UseSelectable = true;
+            this.btn_StockExit.Click += new System.EventHandler(this.btn_StockExit_Click);
             // 
             // label34
             // 

@@ -57,6 +57,7 @@ namespace POS
             if (reader.HasRows)
             {
                 MetroMessageBox.Show(this, "Welcome " + txt_un.Text, "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                userType = cBoxUser.Text;
                 Frm_Main fmain = new Frm_Main();
                 fmain.Show();
                 Hide();

@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
             this.cBoxRole = new System.Windows.Forms.ComboBox();
@@ -53,7 +51,8 @@
             this.Label13 = new System.Windows.Forms.Label();
             this.Label10 = new System.Windows.Forms.Label();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbl_EmployeeNo = new System.Windows.Forms.Label();
+            this.btn_exit = new MetroFramework.Controls.MetroButton();
+            this.btn_save = new MetroFramework.Controls.MetroButton();
             this.Label2 = new System.Windows.Forms.Label();
             this.txt_contact = new System.Windows.Forms.TextBox();
             this.Label4 = new System.Windows.Forms.Label();
@@ -66,11 +65,15 @@
             this.txt_ln = new System.Windows.Forms.TextBox();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
-            this.btn_save = new MetroFramework.Controls.MetroButton();
-            this.btn_exit = new MetroFramework.Controls.MetroButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txt_searchUpdate = new System.Windows.Forms.TextBox();
+            this.btn_search = new MetroFramework.Controls.MetroButton();
+            this.label33 = new System.Windows.Forms.Label();
+            this.btn_editExit = new MetroFramework.Controls.MetroButton();
+            this.btn_update = new MetroFramework.Controls.MetroButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cBoxRoleUpdate = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -85,7 +88,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.lbl_employeeID = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.txt_contactUpdate = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -98,31 +100,31 @@
             this.txt_lnUpdate = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.btn_editExit = new MetroFramework.Controls.MetroButton();
-            this.btn_update = new MetroFramework.Controls.MetroButton();
-            this.label33 = new System.Windows.Forms.Label();
-            this.btn_search = new MetroFramework.Controls.MetroButton();
-            this.txt_searchUpdate = new System.Windows.Forms.TextBox();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.txt_search = new MetroFramework.Controls.MetroTextBox();
             this.cBoxSearchBy = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.txt_eid = new System.Windows.Forms.TextBox();
+            this.txt_employeeID = new System.Windows.Forms.TextBox();
+            this.txt_uid = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
             this.metroTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            this.groupBox6.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -132,8 +134,8 @@
             this.metroTabControl1.Controls.Add(this.tabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(12, 66);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
-            this.metroTabControl1.Size = new System.Drawing.Size(671, 482);
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(671, 514);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -142,31 +144,13 @@
             this.tabPage1.Controls.Add(this.GroupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(663, 440);
+            this.tabPage1.Size = new System.Drawing.Size(663, 495);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Staff";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 38);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(663, 440);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Edit/Update";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.groupBox7);
-            this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 38);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(663, 440);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Search";
-            // 
             // GroupBox1
             // 
+            this.GroupBox1.Controls.Add(this.txt_employeeID);
             this.GroupBox1.Controls.Add(this.GroupBox3);
             this.GroupBox1.Controls.Add(this.Label15);
             this.GroupBox1.Controls.Add(this.Label12);
@@ -176,7 +160,6 @@
             this.GroupBox1.Controls.Add(this.Label13);
             this.GroupBox1.Controls.Add(this.Label10);
             this.GroupBox1.Controls.Add(this.GroupBox2);
-            this.GroupBox1.Controls.Add(this.lbl_EmployeeNo);
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Controls.Add(this.txt_contact);
             this.GroupBox1.Controls.Add(this.Label4);
@@ -368,15 +351,24 @@
             this.GroupBox2.TabIndex = 8;
             this.GroupBox2.TabStop = false;
             // 
-            // lbl_EmployeeNo
+            // btn_exit
             // 
-            this.lbl_EmployeeNo.BackColor = System.Drawing.Color.White;
-            this.lbl_EmployeeNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_EmployeeNo.Location = new System.Drawing.Point(109, 40);
-            this.lbl_EmployeeNo.Name = "lbl_EmployeeNo";
-            this.lbl_EmployeeNo.Size = new System.Drawing.Size(165, 22);
-            this.lbl_EmployeeNo.TabIndex = 2;
-            this.lbl_EmployeeNo.Text = " ";
+            this.btn_exit.Location = new System.Drawing.Point(529, 34);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(100, 50);
+            this.btn_exit.TabIndex = 1;
+            this.btn_exit.Text = "Exit";
+            this.btn_exit.UseSelectable = true;
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(423, 34);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(100, 50);
+            this.btn_save.TabIndex = 0;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseSelectable = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // Label2
             // 
@@ -478,27 +470,18 @@
             this.Label6.TabIndex = 3;
             this.Label6.Text = "Employee No. :";
             // 
-            // btn_save
+            // tabPage2
             // 
-            this.btn_save.Location = new System.Drawing.Point(423, 34);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(100, 50);
-            this.btn_save.TabIndex = 0;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseSelectable = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.Location = new System.Drawing.Point(529, 34);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(100, 50);
-            this.btn_exit.TabIndex = 1;
-            this.btn_exit.Text = "Exit";
-            this.btn_exit.UseSelectable = true;
+            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(663, 472);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Edit/Update";
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.txt_eid);
             this.groupBox4.Controls.Add(this.txt_searchUpdate);
             this.groupBox4.Controls.Add(this.btn_search);
             this.groupBox4.Controls.Add(this.label33);
@@ -512,7 +495,6 @@
             this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Controls.Add(this.label25);
             this.groupBox4.Controls.Add(this.label26);
-            this.groupBox4.Controls.Add(this.lbl_employeeID);
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.txt_contactUpdate);
             this.groupBox4.Controls.Add(this.label29);
@@ -528,14 +510,61 @@
             this.groupBox4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(12, 11);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(637, 417);
+            this.groupBox4.Size = new System.Drawing.Size(637, 446);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Staff Information";
             // 
+            // txt_searchUpdate
+            // 
+            this.txt_searchUpdate.BackColor = System.Drawing.Color.White;
+            this.txt_searchUpdate.Location = new System.Drawing.Point(102, 24);
+            this.txt_searchUpdate.Name = "txt_searchUpdate";
+            this.txt_searchUpdate.Size = new System.Drawing.Size(165, 21);
+            this.txt_searchUpdate.TabIndex = 15;
+            // 
+            // btn_search
+            // 
+            this.btn_search.Location = new System.Drawing.Point(319, 384);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(100, 50);
+            this.btn_search.TabIndex = 14;
+            this.btn_search.Text = "Search";
+            this.btn_search.UseSelectable = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(17, 27);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(83, 13);
+            this.label33.TabIndex = 13;
+            this.label33.Text = "Search Staff:";
+            // 
+            // btn_editExit
+            // 
+            this.btn_editExit.Location = new System.Drawing.Point(531, 384);
+            this.btn_editExit.Name = "btn_editExit";
+            this.btn_editExit.Size = new System.Drawing.Size(100, 50);
+            this.btn_editExit.TabIndex = 11;
+            this.btn_editExit.Text = "Exit";
+            this.btn_editExit.UseSelectable = true;
+            // 
+            // btn_update
+            // 
+            this.btn_update.Location = new System.Drawing.Point(425, 384);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(100, 50);
+            this.btn_update.TabIndex = 10;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseSelectable = true;
+            // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.txt_uid);
+            this.groupBox5.Controls.Add(this.label34);
+            this.groupBox5.Controls.Add(this.cBoxRoleUpdate);
             this.groupBox5.Controls.Add(this.textBox1);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.label17);
@@ -546,21 +575,21 @@
             this.groupBox5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(1, 261);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(635, 90);
+            this.groupBox5.Size = new System.Drawing.Size(635, 117);
             this.groupBox5.TabIndex = 9;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "User Information";
             // 
-            // comboBox1
+            // cBoxRoleUpdate
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cBoxRoleUpdate.FormattingEnabled = true;
+            this.cBoxRoleUpdate.Items.AddRange(new object[] {
             "Admin",
             "Cashier"});
-            this.comboBox1.Location = new System.Drawing.Point(110, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cBoxRoleUpdate.Location = new System.Drawing.Point(110, 81);
+            this.cBoxRoleUpdate.Name = "cBoxRoleUpdate";
+            this.cBoxRoleUpdate.Size = new System.Drawing.Size(165, 21);
+            this.cBoxRoleUpdate.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -583,7 +612,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(25, 58);
+            this.label17.Location = new System.Drawing.Point(25, 84);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 13);
             this.label17.TabIndex = 11;
@@ -610,7 +639,7 @@
             // txt_unUpdate
             // 
             this.txt_unUpdate.BackColor = System.Drawing.Color.White;
-            this.txt_unUpdate.Location = new System.Drawing.Point(110, 27);
+            this.txt_unUpdate.Location = new System.Drawing.Point(110, 53);
             this.txt_unUpdate.Name = "txt_unUpdate";
             this.txt_unUpdate.Size = new System.Drawing.Size(165, 21);
             this.txt_unUpdate.TabIndex = 0;
@@ -618,7 +647,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(25, 30);
+            this.label19.Location = new System.Drawing.Point(25, 56);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(74, 13);
             this.label19.TabIndex = 8;
@@ -693,16 +722,6 @@
             this.label26.Size = new System.Drawing.Size(54, 12);
             this.label26.TabIndex = 8;
             this.label26.Text = "Lastname";
-            // 
-            // lbl_employeeID
-            // 
-            this.lbl_employeeID.BackColor = System.Drawing.Color.White;
-            this.lbl_employeeID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_employeeID.Location = new System.Drawing.Point(102, 71);
-            this.lbl_employeeID.Name = "lbl_employeeID";
-            this.lbl_employeeID.Size = new System.Drawing.Size(165, 22);
-            this.lbl_employeeID.TabIndex = 2;
-            this.lbl_employeeID.Text = " ";
             // 
             // label28
             // 
@@ -804,106 +823,15 @@
             this.label31.TabIndex = 3;
             this.label31.Text = "Employee No. :";
             // 
-            // btn_editExit
+            // tabPage3
             // 
-            this.btn_editExit.Location = new System.Drawing.Point(531, 361);
-            this.btn_editExit.Name = "btn_editExit";
-            this.btn_editExit.Size = new System.Drawing.Size(100, 50);
-            this.btn_editExit.TabIndex = 11;
-            this.btn_editExit.Text = "Exit";
-            this.btn_editExit.UseSelectable = true;
-            // 
-            // btn_update
-            // 
-            this.btn_update.Location = new System.Drawing.Point(425, 361);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(100, 50);
-            this.btn_update.TabIndex = 10;
-            this.btn_update.Text = "Update";
-            this.btn_update.UseSelectable = true;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(17, 27);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(83, 13);
-            this.label33.TabIndex = 13;
-            this.label33.Text = "Search Staff:";
-            // 
-            // btn_search
-            // 
-            this.btn_search.Location = new System.Drawing.Point(319, 361);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(100, 50);
-            this.btn_search.TabIndex = 14;
-            this.btn_search.Text = "Search";
-            this.btn_search.UseSelectable = true;
-            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
-            // 
-            // txt_searchUpdate
-            // 
-            this.txt_searchUpdate.BackColor = System.Drawing.Color.White;
-            this.txt_searchUpdate.Location = new System.Drawing.Point(102, 24);
-            this.txt_searchUpdate.Name = "txt_searchUpdate";
-            this.txt_searchUpdate.Size = new System.Drawing.Size(165, 21);
-            this.txt_searchUpdate.TabIndex = 15;
-            // 
-            // metroGrid1
-            // 
-            this.metroGrid1.AllowUserToAddRows = false;
-            this.metroGrid1.AllowUserToDeleteRows = false;
-            this.metroGrid1.AllowUserToResizeRows = false;
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.metroGrid1.EnableHeadersVisualStyles = false;
-            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(7, 19);
-            this.metroGrid1.Name = "metroGrid1";
-            this.metroGrid1.ReadOnly = true;
-            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(633, 300);
-            this.metroGrid1.TabIndex = 0;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.metroGrid1);
-            this.groupBox6.Location = new System.Drawing.Point(10, 112);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(647, 325);
-            this.groupBox6.TabIndex = 1;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Staff Information";
+            this.tabPage3.Controls.Add(this.groupBox7);
+            this.tabPage3.Controls.Add(this.groupBox6);
+            this.tabPage3.Location = new System.Drawing.Point(4, 38);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(663, 495);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Search";
             // 
             // groupBox7
             // 
@@ -912,12 +840,33 @@
             this.groupBox7.Controls.Add(this.metroButton1);
             this.groupBox7.Controls.Add(this.txt_search);
             this.groupBox7.Controls.Add(this.cBoxSearchBy);
-            this.groupBox7.Location = new System.Drawing.Point(19, 21);
+            this.groupBox7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(12, 11);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(631, 64);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Search Information";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(224, 27);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(52, 13);
+            this.label32.TabIndex = 11;
+            this.label32.Text = "Search:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(6, 27);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(71, 13);
+            this.label27.TabIndex = 10;
+            this.label27.Text = "Search By:";
             // 
             // metroButton1
             // 
@@ -971,31 +920,103 @@
             this.cBoxSearchBy.Size = new System.Drawing.Size(121, 21);
             this.cBoxSearchBy.TabIndex = 5;
             // 
-            // label27
+            // groupBox6
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(6, 27);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(71, 13);
-            this.label27.TabIndex = 10;
-            this.label27.Text = "Search By:";
+            this.groupBox6.Controls.Add(this.metroGrid1);
+            this.groupBox6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(10, 104);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(647, 325);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Staff Information";
             // 
-            // label32
+            // metroGrid1
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(224, 27);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(52, 13);
-            this.label32.TabIndex = 11;
-            this.label32.Text = "Search:";
+            this.metroGrid1.AllowUserToAddRows = false;
+            this.metroGrid1.AllowUserToDeleteRows = false;
+            this.metroGrid1.AllowUserToResizeRows = false;
+            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.metroGrid1.EnableHeadersVisualStyles = false;
+            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.Location = new System.Drawing.Point(7, 19);
+            this.metroGrid1.Name = "metroGrid1";
+            this.metroGrid1.ReadOnly = true;
+            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.metroGrid1.Size = new System.Drawing.Size(633, 300);
+            this.metroGrid1.TabIndex = 0;
+            // 
+            // txt_eid
+            // 
+            this.txt_eid.BackColor = System.Drawing.Color.White;
+            this.txt_eid.Enabled = false;
+            this.txt_eid.Location = new System.Drawing.Point(111, 71);
+            this.txt_eid.Name = "txt_eid";
+            this.txt_eid.Size = new System.Drawing.Size(165, 21);
+            this.txt_eid.TabIndex = 16;
+            // 
+            // txt_employeeID
+            // 
+            this.txt_employeeID.BackColor = System.Drawing.Color.White;
+            this.txt_employeeID.Location = new System.Drawing.Point(111, 41);
+            this.txt_employeeID.Name = "txt_employeeID";
+            this.txt_employeeID.Size = new System.Drawing.Size(165, 21);
+            this.txt_employeeID.TabIndex = 17;
+            // 
+            // txt_uid
+            // 
+            this.txt_uid.BackColor = System.Drawing.Color.White;
+            this.txt_uid.Enabled = false;
+            this.txt_uid.Location = new System.Drawing.Point(110, 26);
+            this.txt_uid.Name = "txt_uid";
+            this.txt_uid.Size = new System.Drawing.Size(165, 21);
+            this.txt_uid.TabIndex = 13;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(25, 29);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(60, 13);
+            this.label34.TabIndex = 14;
+            this.label34.Text = "User ID :";
             // 
             // Frm_Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 571);
+            this.ClientSize = new System.Drawing.Size(696, 651);
             this.Controls.Add(this.metroTabControl1);
             this.MaximizeBox = false;
             this.Name = "Frm_Staff";
@@ -1004,21 +1025,21 @@
             this.Load += new System.EventHandler(this.Frm_mainStaff_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.GroupBox3.ResumeLayout(false);
             this.GroupBox3.PerformLayout();
             this.GroupBox2.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            this.groupBox6.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1047,7 +1068,6 @@
         internal System.Windows.Forms.GroupBox GroupBox2;
         private MetroFramework.Controls.MetroButton btn_exit;
         private MetroFramework.Controls.MetroButton btn_save;
-        internal System.Windows.Forms.Label lbl_EmployeeNo;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.TextBox txt_contact;
         internal System.Windows.Forms.Label Label4;
@@ -1064,7 +1084,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         internal System.Windows.Forms.GroupBox groupBox4;
         internal System.Windows.Forms.GroupBox groupBox5;
-        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.ComboBox cBoxRoleUpdate;
         internal System.Windows.Forms.TextBox textBox1;
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Label label17;
@@ -1079,7 +1099,6 @@
         internal System.Windows.Forms.Label label24;
         internal System.Windows.Forms.Label label25;
         internal System.Windows.Forms.Label label26;
-        internal System.Windows.Forms.Label lbl_employeeID;
         internal System.Windows.Forms.Label label28;
         internal System.Windows.Forms.TextBox txt_contactUpdate;
         internal System.Windows.Forms.Label label29;
@@ -1105,5 +1124,9 @@
         private System.Windows.Forms.ComboBox cBoxSearchBy;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label27;
+        internal System.Windows.Forms.TextBox txt_eid;
+        internal System.Windows.Forms.TextBox txt_employeeID;
+        internal System.Windows.Forms.TextBox txt_uid;
+        internal System.Windows.Forms.Label label34;
     }
 }

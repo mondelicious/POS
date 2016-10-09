@@ -68,12 +68,6 @@
     <Compile Include="Frm_category.Designer.cs">
       <DependentUpon>Frm_category.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_editStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_editStaff.Designer.cs">
-      <DependentUpon>Frm_editStaff.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_POS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +114,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_category.resx">
       <DependentUpon>Frm_category.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_editStaff.resx">
-      <DependentUpon>Frm_editStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_POS.resx">
       <DependentUpon>Frm_POS.cs</DependentUpon>

@@ -116,7 +116,8 @@ namespace POS
 
             conn.Open();
             cmd.Connection = conn;
-            string INSERT = "INSERT INTO tbl_StaffInformation(Last_name,First_name,Middle_name,Street,Brgy,City,Province,Contact_number)VALUES(@ln,@fn,@mn,@st,@brgy,@city,@province,@contactNumber)";
+            string INSERT = "INSERT INTO tbl_StaffInformation(Employee_ID,Last_name,First_name,Middle_name,Street,Brgy,City,Province,Contact_number)VALUES(@eid,@ln,@fn,@mn,@st,@brgy,@city,@province,@contactNumber)";
+            cmd.Parameters.AddWithValue("eid", Frm_Staff.eCode);
             cmd.Parameters.AddWithValue("ln", Frm_Staff.lastName);
             cmd.Parameters.AddWithValue("fn", Frm_Staff.firstName);
             cmd.Parameters.AddWithValue("mn", Frm_Staff.middleName);
@@ -177,44 +178,6 @@ namespace POS
             Frm_settingsSystem.Website = null;
             Frm_settingsSystem.tinNumber = null;
         }
-        public static void EditStaff()
-        {
-            
-
-            SqlCommand cmd = new SqlCommand();
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = ConfigurationManager.ConnectionStrings["connGlobal"].ToString();
-
-            conn.Open();
-            cmd.Connection = conn;
-            string UPDATE = "UPDATE tbl_StaffInformation SET Last_name =@ln, First_name = @fn, Middle_name = @mi, Street = @st, Brgy = @brgy, City = @city, Province = @province, Contact_number = @contact WHERE employee_number = @eid";
-            cmd.Parameters.AddWithValue("eid", Frm_editStaff.eCode);
-            cmd.Parameters.AddWithValue("ln", Frm_editStaff.lastName);
-            cmd.Parameters.AddWithValue("fn", Frm_editStaff.firstName);
-            cmd.Parameters.AddWithValue("mi", Frm_editStaff.middleName);
-            cmd.Parameters.AddWithValue("st", Frm_editStaff.street);
-            cmd.Parameters.AddWithValue("brgy", Frm_editStaff.barangay);
-            cmd.Parameters.AddWithValue("city", Frm_editStaff.city);
-            cmd.Parameters.AddWithValue("province", Frm_editStaff.province);
-            cmd.Parameters.AddWithValue("contact", Frm_editStaff.contactNumber);
-            cmd.CommandText = UPDATE;
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            cmd.Parameters.Clear();
-            
-            Frm_editStaff.lastName = null;
-            Frm_editStaff.firstName = null;
-            Frm_editStaff.middleName = null;
-            Frm_editStaff.street = null;
-            Frm_editStaff.barangay = null;
-            Frm_editStaff.city = null;
-            Frm_editStaff.province = null;
-            Frm_editStaff.contactNumber = null;
-            Frm_editStaff.userName = null;
-            Frm_editStaff.passWord = null;
-            Frm_editStaff.role = null;
-        }
-
         public static void AddCategory()
         {
             SqlConnection conn = new SqlConnection();

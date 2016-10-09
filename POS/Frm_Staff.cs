@@ -26,9 +26,55 @@ namespace POS
         SqlConnection conn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
 
+
+        public void User()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tbl_UserInfo WHERE Employee_ID = @eid", conn);
+            cmd.Parameters.AddWithValue("eid", txt_searchUpdate.Text);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            int count = 0;
+            while (reader.Read())
+            {
+                count = count + 1;
+                string gEmployID = reader.GetInt32(reader.GetOrdinal("Employee_ID")).ToString();
+                string glName = reader.GetString(reader.GetOrdinal("Last_name"));
+                string gfName = reader.GetString(reader.GetOrdinal("First_name"));
+                string gmName = reader.GetString(reader.GetOrdinal("Middle_name"));
+                string gStreet = reader.GetString(reader.GetOrdinal("Street"));
+                string gBrgy = reader.GetString(reader.GetOrdinal("Brgy"));
+                string gCity = reader.GetString(reader.GetOrdinal("City"));
+                string gProvince = reader.GetString(reader.GetOrdinal("Province"));
+                string gContact = reader.GetString(reader.GetOrdinal("Contact_number"));
+
+                txt_eid.Text = gEmployID;
+                txt_lnUpdate.Text = glName;
+                txt_fnUpdate.Text = gfName;
+                txt_miUpdate.Text = gmName;
+                txt_streetUpdate.Text = gStreet;
+                txt_brgyUpdate.Text = gBrgy;
+                txt_cityUpdate.Text = gCity;
+                txt_provinceUpdate.Text = gProvince;
+                txt_contactUpdate.Text = gContact;
+            }
+            if (count == 0)
+            {
+                MetroFramework.MetroMessageBox.Show(this, "No records found!", "System", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                clearupdate();
+            }
+            else
+            {
+                //TODO:NOTHING
+            }
+            conn.Close();
+            cmd.Parameters.Clear();
+        }
+
         public void clearupdate()
         {
-            lbl_employeeID.Text = null;
+            txt_eid.Text = null;
             txt_lnUpdate.Text = null;
             txt_fnUpdate.Text = null;
             txt_miUpdate.Text = null;
@@ -61,8 +107,7 @@ namespace POS
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            Frm_editStaff fedit = new Frm_editStaff();
-            fedit.ShowDialog();
+         
         }
 
         private void metroTile3_Click(object sender, EventArgs e)
@@ -74,6 +119,7 @@ namespace POS
         {
             if (MetroFramework.MetroMessageBox.Show(this, "Do you want to add this information?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                eCode = txt_employeeID.Text;
                 lastName = txt_ln.Text;
                 firstName = txt_fn.Text;
                 middleName = txt_mi.Text;
@@ -98,8 +144,8 @@ namespace POS
         private void btn_search_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM tbl_StaffInformation WHERE Employee_ID = @eid", conn);
-            cmd.Parameters.AddWithValue("eid", txt_searchUpdate.Text);
+            SqlCommand cmd = new SqlCommand("SELECT tbl_S.Employee_ID, tbl_S.Uid, tbl_S.Last_name, tbl_s.First_name, tbl_S.Middle_name, tbl_S.Street, tbl_S.Brgy, tbl_S.City, tbl_S.Province, tbl_S.Contact_number, tbl_U.Username, tbl_U.Password, tbl_U.Role FROM tbl_StaffInformation AS tbl_S INNER JOIN tbl_UserInfo AS tbl_U ON tbl_S.Uid = tbl_U.Uid WHERE tbl_S.Uid = @uid", conn);
+            cmd.Parameters.AddWithValue("uid", txt_searchUpdate.Text);
             cmd.CommandType = CommandType.Text;
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -108,6 +154,7 @@ namespace POS
             {
                 count = count + 1;
                 string gEmployID = reader.GetInt32(reader.GetOrdinal("Employee_ID")).ToString();
+                string gUid = reader.GetInt32(reader.GetOrdinal("Uid")).ToString();
                 string glName = reader.GetString(reader.GetOrdinal("Last_name"));
                 string gfName = reader.GetString(reader.GetOrdinal("First_name"));
                 string gmName = reader.GetString(reader.GetOrdinal("Middle_name"));
@@ -116,8 +163,12 @@ namespace POS
                 string gCity = reader.GetString(reader.GetOrdinal("City"));
                 string gProvince = reader.GetString(reader.GetOrdinal("Province"));
                 string gContact = reader.GetString(reader.GetOrdinal("Contact_number"));
+                string gUser = reader.GetString(reader.GetOrdinal("Username"));
+                string gPass = reader.GetString(reader.GetOrdinal("Password"));
+                string gRole = reader.GetString(reader.GetOrdinal("Role"));
 
-                lbl_employeeID.Text = gEmployID;
+                txt_eid.Text = gEmployID;
+                txt_uid.Text = gUid;
                 txt_lnUpdate.Text = glName;
                 txt_fnUpdate.Text = gfName;
                 txt_miUpdate.Text = gmName;
@@ -126,6 +177,9 @@ namespace POS
                 txt_cityUpdate.Text = gCity;
                 txt_provinceUpdate.Text = gProvince;
                 txt_contactUpdate.Text = gContact;
+                txt_unUpdate.Text = gUser;
+                txt_pwUpdate.Text = gPass;
+                cBoxRoleUpdate.Text = gRole;
             }
             if (count == 0)
             {

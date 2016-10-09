@@ -339,5 +339,10 @@ namespace POS
         {
 
         }
+
+        private void btn_StockExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

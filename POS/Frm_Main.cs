@@ -1,22 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
-using Microsoft.VisualBasic;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace POS
 {
     public partial class Frm_Main : MetroForm
     {
+        SqlConnection conn = new SqlConnection();
         public Frm_Main()
         {
             InitializeComponent();
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["connGlobal"].ToString();
         }
 
         private void invetoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,7 +28,11 @@ namespace POS
 
         private void Frm_Main_Load(object sender, EventArgs e)
         {
+            conn.Open();
+            lbl_dbStatus.Text = "Connected";
+            conn.Close();
 
+            lbl_accountStats.Text = Frm_Login.userType;
         }
 
         private void customerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +76,11 @@ namespace POS
         {
             Frm_settingsSystem fsystem = new Frm_settingsSystem();
             fsystem.ShowDialog();
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
