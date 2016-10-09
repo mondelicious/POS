@@ -21,7 +21,7 @@ namespace POS
 
         private void Frm_settingsSystem_Load(object sender, EventArgs e)
         {
-
+            metroTabControl1.SelectTab(tabPage3);
         }
 
         private void btn_save_Click(object sender, EventArgs e)

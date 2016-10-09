@@ -56,11 +56,22 @@ namespace POS
 
             if (reader.HasRows)
             {
-                MetroMessageBox.Show(this, "Welcome " + txt_un.Text, "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                userType = cBoxUser.Text;
-                Frm_Main fmain = new Frm_Main();
-                fmain.Show();
-                Hide();
+                if (cBoxUser.Text == "Admin")
+                {
+                    MetroMessageBox.Show(this, "Welcome " + txt_un.Text, "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    userType = cBoxUser.Text;
+                    Frm_Main fmain = new Frm_Main();
+                    fmain.Show();
+                    Hide();
+                }
+                else if(cBoxUser.Text == "Cashier")
+                {
+                    MetroMessageBox.Show(this, "Welcome " + txt_un.Text, "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    userType = cBoxUser.Text;
+                    Frm_POS fpos = new Frm_POS();
+                    fpos.Show();
+                    Hide();
+                }
             }
             else
             {

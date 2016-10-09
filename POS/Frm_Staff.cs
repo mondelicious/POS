@@ -23,6 +23,8 @@ namespace POS
         public static string passWord = "";
         public static string role = "";
 
+         int incNumber = 0;
+        
         SqlConnection conn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
 
@@ -84,6 +86,8 @@ namespace POS
             txt_provinceUpdate.Text = null;
             txt_contactUpdate.Text = null;
         }
+
+        
         public Frm_Staff()
         {
             InitializeComponent();
@@ -93,6 +97,11 @@ namespace POS
         private void Frm_mainStaff_Load(object sender, EventArgs e)
         {
             metroTabControl1.SelectedTab = tabPage1;
+
+            //string nyNumber = "EID" + incNumber.ToString("0000");
+            //incNumber++;
+
+            //txt_employeeID.Text = nyNumber;
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
@@ -144,8 +153,8 @@ namespace POS
         private void btn_search_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT tbl_S.Employee_ID, tbl_S.Uid, tbl_S.Last_name, tbl_s.First_name, tbl_S.Middle_name, tbl_S.Street, tbl_S.Brgy, tbl_S.City, tbl_S.Province, tbl_S.Contact_number, tbl_U.Username, tbl_U.Password, tbl_U.Role FROM tbl_StaffInformation AS tbl_S INNER JOIN tbl_UserInfo AS tbl_U ON tbl_S.Uid = tbl_U.Uid WHERE tbl_S.Uid = @uid", conn);
-            cmd.Parameters.AddWithValue("uid", txt_searchUpdate.Text);
+            SqlCommand cmd = new SqlCommand("SELECT tbl_S.Employee_ID, tbl_S.Uid, tbl_S.Last_name, tbl_s.First_name, tbl_S.Middle_name, tbl_S.Street, tbl_S.Brgy, tbl_S.City, tbl_S.Province, tbl_S.Contact_number, tbl_U.Username, tbl_U.Password, tbl_U.Role FROM tbl_StaffInformation AS tbl_S INNER JOIN tbl_UserInfo AS tbl_U ON tbl_S.Uid = tbl_U.Uid WHERE tbl_S.Employee_ID = @eid", conn);
+            cmd.Parameters.AddWithValue("eid", txt_searchUpdate.Text);
             cmd.CommandType = CommandType.Text;
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -153,7 +162,7 @@ namespace POS
             while (reader.Read())
             {
                 count = count + 1;
-                string gEmployID = reader.GetInt32(reader.GetOrdinal("Employee_ID")).ToString();
+                string gEmployID = reader.GetString(reader.GetOrdinal("Employee_ID")).ToString();
                 string gUid = reader.GetInt32(reader.GetOrdinal("Uid")).ToString();
                 string glName = reader.GetString(reader.GetOrdinal("Last_name"));
                 string gfName = reader.GetString(reader.GetOrdinal("First_name"));
@@ -200,7 +209,7 @@ namespace POS
             {
                 conn.Open();
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT * FROM tbl_StaffInformation WHERE Employee_ID = @eid";
+                cmd.CommandText = "SELECT tbl_S.Employee_ID, tbl_S.Uid, (tbl_S.Last_name+' '+tbl_s.First_name+' '+tbl_S.Middle_name)[Full name], tbl_S.Street, tbl_S.Brgy, tbl_S.City, tbl_S.Province, tbl_S.Contact_number, tbl_U.Username, tbl_U.Password, tbl_U.Role FROM tbl_StaffInformation AS tbl_S INNER JOIN tbl_UserInfo AS tbl_U ON tbl_S.Uid = tbl_U.Uid WHERE tbl_S.Employee_ID = @eid";
                 cmd.Parameters.AddWithValue("eid", txt_search.Text);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -211,6 +220,19 @@ namespace POS
                 conn.Close();
                 cmd.Parameters.Clear();
             }
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            //auto increment
+            //int counter = 0;
+            //string sampleNum = "s" + counter++.ToString("00");
+            //counter++;
+
+            string nyNumber = "s" + incNumber.ToString("00");
+            incNumber++;
+
+            txt_employeeID.Text = nyNumber;
         }
     }
 }
