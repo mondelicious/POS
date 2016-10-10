@@ -47,6 +47,7 @@
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
+            this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,6 +127,7 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
+            this.metroTile1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile1.Location = new System.Drawing.Point(36, 75);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(111, 83);
@@ -137,6 +139,7 @@
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
+            this.metroTile2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile2.Location = new System.Drawing.Point(153, 75);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(111, 83);
@@ -148,6 +151,7 @@
             // metroTile3
             // 
             this.metroTile3.ActiveControl = null;
+            this.metroTile3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile3.Location = new System.Drawing.Point(270, 75);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(111, 83);
@@ -159,6 +163,7 @@
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
+            this.metroTile4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile4.Location = new System.Drawing.Point(387, 75);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(111, 83);
@@ -170,6 +175,7 @@
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
+            this.metroTile5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile5.Location = new System.Drawing.Point(504, 75);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(128, 83);
@@ -180,6 +186,7 @@
             // metroTile6
             // 
             this.metroTile6.ActiveControl = null;
+            this.metroTile6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile6.Location = new System.Drawing.Point(638, 75);
             this.metroTile6.Name = "metroTile6";
             this.metroTile6.Size = new System.Drawing.Size(111, 83);
@@ -190,6 +197,7 @@
             // metroTile8
             // 
             this.metroTile8.ActiveControl = null;
+            this.metroTile8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile8.Location = new System.Drawing.Point(755, 75);
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.Size = new System.Drawing.Size(111, 83);
@@ -201,6 +209,7 @@
             // metroTile9
             // 
             this.metroTile9.ActiveControl = null;
+            this.metroTile9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroTile9.Location = new System.Drawing.Point(872, 75);
             this.metroTile9.Name = "metroTile9";
             this.metroTile9.Size = new System.Drawing.Size(111, 83);
@@ -209,11 +218,23 @@
             this.metroTile9.UseSelectable = true;
             this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             // 
+            // metroTile7
+            // 
+            this.metroTile7.ActiveControl = null;
+            this.metroTile7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTile7.Location = new System.Drawing.Point(36, 176);
+            this.metroTile7.Name = "metroTile7";
+            this.metroTile7.Size = new System.Drawing.Size(111, 83);
+            this.metroTile7.TabIndex = 14;
+            this.metroTile7.Text = "About Us";
+            this.metroTile7.UseSelectable = true;
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 513);
+            this.Controls.Add(this.metroTile7);
             this.Controls.Add(this.metroTile9);
             this.Controls.Add(this.metroTile8);
             this.Controls.Add(this.metroTile6);
@@ -260,5 +281,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel9;
         private System.Windows.Forms.ToolStripStatusLabel lbl_dbStatus;
+        private MetroFramework.Controls.MetroTile metroTile7;
     }
 }

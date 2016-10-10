@@ -156,6 +156,7 @@
             // 
             // btn_clear
             // 
+            this.btn_clear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_clear.Location = new System.Drawing.Point(485, 275);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 42);
@@ -174,6 +175,7 @@
             // 
             // btn_Add
             // 
+            this.btn_Add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Add.Location = new System.Drawing.Point(404, 275);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(75, 42);
@@ -194,6 +196,7 @@
             // 
             // btn_exit
             // 
+            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_exit.Location = new System.Drawing.Point(566, 275);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 42);
@@ -399,6 +402,7 @@
             // 
             // btn_update
             // 
+            this.btn_update.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_update.Location = new System.Drawing.Point(485, 275);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 42);
@@ -409,6 +413,7 @@
             // 
             // btn_search
             // 
+            this.btn_search.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_search.Location = new System.Drawing.Point(404, 275);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(75, 42);
@@ -419,6 +424,7 @@
             // 
             // btn_exitUpdate
             // 
+            this.btn_exitUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_exitUpdate.Location = new System.Drawing.Point(566, 275);
             this.btn_exitUpdate.Name = "btn_exitUpdate";
             this.btn_exitUpdate.Size = new System.Drawing.Size(75, 42);
@@ -623,6 +629,7 @@
             // 
             // btn_searchB
             // 
+            this.btn_searchB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_searchB.Location = new System.Drawing.Point(485, 275);
             this.btn_searchB.Name = "btn_searchB";
             this.btn_searchB.Size = new System.Drawing.Size(75, 42);
@@ -633,6 +640,7 @@
             // 
             // btn_searchExit
             // 
+            this.btn_searchExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_searchExit.Location = new System.Drawing.Point(566, 275);
             this.btn_searchExit.Name = "btn_searchExit";
             this.btn_searchExit.Size = new System.Drawing.Size(75, 42);
@@ -834,6 +842,7 @@
             // 
             // btn_addStock
             // 
+            this.btn_addStock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_addStock.Location = new System.Drawing.Point(480, 279);
             this.btn_addStock.Name = "btn_addStock";
             this.btn_addStock.Size = new System.Drawing.Size(75, 42);
@@ -844,6 +853,7 @@
             // 
             // btn_searchStock
             // 
+            this.btn_searchStock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_searchStock.Location = new System.Drawing.Point(399, 279);
             this.btn_searchStock.Name = "btn_searchStock";
             this.btn_searchStock.Size = new System.Drawing.Size(75, 42);
@@ -854,6 +864,7 @@
             // 
             // btn_StockExit
             // 
+            this.btn_StockExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_StockExit.Location = new System.Drawing.Point(561, 279);
             this.btn_StockExit.Name = "btn_StockExit";
             this.btn_StockExit.Size = new System.Drawing.Size(75, 42);

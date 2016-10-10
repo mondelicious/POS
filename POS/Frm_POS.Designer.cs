@@ -342,7 +342,7 @@
             // 
             this.metroListView1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.metroListView1.FullRowSelect = true;
-            this.metroListView1.Location = new System.Drawing.Point(14, 33);
+            this.metroListView1.Location = new System.Drawing.Point(14, 24);
             this.metroListView1.Name = "metroListView1";
             this.metroListView1.OwnerDraw = true;
             this.metroListView1.Size = new System.Drawing.Size(900, 462);
@@ -655,6 +655,7 @@
             // 
             // metroButton7
             // 
+            this.metroButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton7.Location = new System.Drawing.Point(14, 149);
             this.metroButton7.Name = "metroButton7";
             this.metroButton7.Size = new System.Drawing.Size(99, 34);
@@ -664,6 +665,7 @@
             // 
             // metroButton6
             // 
+            this.metroButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton6.Location = new System.Drawing.Point(165, 109);
             this.metroButton6.Name = "metroButton6";
             this.metroButton6.Size = new System.Drawing.Size(99, 34);
@@ -674,6 +676,7 @@
             // 
             // metroButton5
             // 
+            this.metroButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton5.Location = new System.Drawing.Point(165, 69);
             this.metroButton5.Name = "metroButton5";
             this.metroButton5.Size = new System.Drawing.Size(99, 34);
@@ -683,6 +686,7 @@
             // 
             // metroButton4
             // 
+            this.metroButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton4.Location = new System.Drawing.Point(14, 109);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(99, 34);
@@ -692,6 +696,7 @@
             // 
             // metroButton3
             // 
+            this.metroButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton3.Location = new System.Drawing.Point(14, 69);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(99, 34);
@@ -701,6 +706,7 @@
             // 
             // metroButton1
             // 
+            this.metroButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton1.Location = new System.Drawing.Point(165, 29);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(99, 34);
@@ -710,6 +716,7 @@
             // 
             // metroButton2
             // 
+            this.metroButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton2.Location = new System.Drawing.Point(14, 29);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(99, 34);
@@ -721,7 +728,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1229, 676);
+            this.ClientSize = new System.Drawing.Size(1245, 683);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

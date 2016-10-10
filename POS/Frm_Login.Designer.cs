@@ -140,6 +140,7 @@
             // 
             // btn_login
             // 
+            this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.Location = new System.Drawing.Point(114, 236);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(75, 23);
@@ -150,6 +151,7 @@
             // 
             // btn_exit
             // 
+            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_exit.Location = new System.Drawing.Point(236, 236);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 23);
@@ -174,6 +176,7 @@
             this.Controls.Add(this.cBoxUser);
             this.MaximizeBox = false;
             this.Name = "Frm_Login";
+            this.Resizable = false;
             this.Text = "Login ";
             this.Load += new System.EventHandler(this.Frm_Login_Load);
             this.ResumeLayout(false);

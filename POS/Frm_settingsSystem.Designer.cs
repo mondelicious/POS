@@ -30,7 +30,6 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_save = new MetroFramework.Controls.MetroTile();
             this.Label2 = new System.Windows.Forms.Label();
@@ -45,14 +44,15 @@
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_phoneNo = new System.Windows.Forms.TextBox();
             this.txt_name = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_saveVAT = new MetroFramework.Controls.MetroTile();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_percent = new System.Windows.Forms.TextBox();
             this.metroTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,15 +75,6 @@
             this.tabPage3.Size = new System.Drawing.Size(441, 346);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Company";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 38);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(441, 346);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "VAT";
             // 
             // groupBox1
             // 
@@ -111,6 +102,7 @@
             // btn_save
             // 
             this.btn_save.ActiveControl = null;
+            this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_save.Location = new System.Drawing.Point(323, 263);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(86, 65);
@@ -217,6 +209,15 @@
             this.txt_name.Size = new System.Drawing.Size(301, 54);
             this.txt_name.TabIndex = 6;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 38);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(441, 346);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "VAT";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btn_saveVAT);
@@ -233,6 +234,7 @@
             // btn_saveVAT
             // 
             this.btn_saveVAT.ActiveControl = null;
+            this.btn_saveVAT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_saveVAT.Location = new System.Drawing.Point(328, 272);
             this.btn_saveVAT.Name = "btn_saveVAT";
             this.btn_saveVAT.Size = new System.Drawing.Size(86, 65);
@@ -270,9 +272,9 @@
             this.Load += new System.EventHandler(this.Frm_settingsSystem_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);

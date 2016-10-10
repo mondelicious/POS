@@ -209,7 +209,7 @@ namespace POS
             {
                 conn.Open();
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT tbl_S.Employee_ID, tbl_S.Uid, (tbl_S.Last_name+' '+tbl_s.First_name+' '+tbl_S.Middle_name)[Full name], tbl_S.Street, tbl_S.Brgy, tbl_S.City, tbl_S.Province, tbl_S.Contact_number, tbl_U.Username, tbl_U.Password, tbl_U.Role FROM tbl_StaffInformation AS tbl_S INNER JOIN tbl_UserInfo AS tbl_U ON tbl_S.Uid = tbl_U.Uid WHERE tbl_S.Employee_ID = @eid";
+                cmd.CommandText = "SELECT tbl_S.Employee_ID, tbl_S.Uid, (tbl_S.Last_name+', '+tbl_s.First_name+' '+tbl_S.Middle_name)[Full name], (tbl_S.Street+', '+ tbl_S.Brgy+', '+ tbl_S.City+', '+ tbl_S.Province)[Address], tbl_S.Contact_number, tbl_U.Username, tbl_U.Password, tbl_U.Role FROM tbl_StaffInformation AS tbl_S INNER JOIN tbl_UserInfo AS tbl_U ON tbl_S.Uid = tbl_U.Uid WHERE tbl_S.Employee_ID = @eid";
                 cmd.Parameters.AddWithValue("eid", txt_search.Text);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);

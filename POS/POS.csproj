@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_cmd.cs" />
+    <Compile Include="Frm_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_About.Designer.cs">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_About.resx">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_category.resx">
       <DependentUpon>Frm_category.cs</DependentUpon>
     </EmbeddedResource>

@@ -58,6 +58,7 @@
             this.txt_catName.Name = "txt_catName";
             this.txt_catName.Size = new System.Drawing.Size(406, 21);
             this.txt_catName.TabIndex = 0;
+            this.txt_catName.TextChanged += new System.EventHandler(this.txt_catName_TextChanged);
             // 
             // Label1
             // 

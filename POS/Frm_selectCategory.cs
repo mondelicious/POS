@@ -59,5 +59,10 @@ namespace POS
         {
 
         }
+
+        private void txt_catName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

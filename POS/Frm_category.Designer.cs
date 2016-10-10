@@ -30,14 +30,14 @@
         {
             this.txt_description = new System.Windows.Forms.TextBox();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_categoryNo = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.txt_categoryName = new System.Windows.Forms.TextBox();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_save = new MetroFramework.Controls.MetroButton();
             this.btn_cancel = new MetroFramework.Controls.MetroButton();
-            this.txt_categoryNo = new System.Windows.Forms.TextBox();
+            this.btn_save = new MetroFramework.Controls.MetroButton();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,15 @@
             this.GroupBox1.TabIndex = 13;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Category Information";
+            // 
+            // txt_categoryNo
+            // 
+            this.txt_categoryNo.BackColor = System.Drawing.Color.White;
+            this.txt_categoryNo.Enabled = false;
+            this.txt_categoryNo.Location = new System.Drawing.Point(130, 41);
+            this.txt_categoryNo.Name = "txt_categoryNo";
+            this.txt_categoryNo.Size = new System.Drawing.Size(156, 21);
+            this.txt_categoryNo.TabIndex = 4;
             // 
             // Label2
             // 
@@ -111,18 +120,9 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             // 
-            // btn_save
-            // 
-            this.btn_save.Location = new System.Drawing.Point(439, 16);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(85, 55);
-            this.btn_save.TabIndex = 2;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseSelectable = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
             // btn_cancel
             // 
+            this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancel.Location = new System.Drawing.Point(544, 16);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(85, 55);
@@ -130,14 +130,16 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseSelectable = true;
             // 
-            // txt_categoryNo
+            // btn_save
             // 
-            this.txt_categoryNo.BackColor = System.Drawing.Color.White;
-            this.txt_categoryNo.Enabled = false;
-            this.txt_categoryNo.Location = new System.Drawing.Point(130, 41);
-            this.txt_categoryNo.Name = "txt_categoryNo";
-            this.txt_categoryNo.Size = new System.Drawing.Size(156, 21);
-            this.txt_categoryNo.TabIndex = 4;
+            this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_save.Location = new System.Drawing.Point(439, 16);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(85, 55);
+            this.btn_save.TabIndex = 2;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseSelectable = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // Frm_category
             // 
